@@ -47,6 +47,25 @@ class CreateAddressService {
       throw new AppError("Preencha os campos obrigatórios", 400);
     }
 
+    const allAddressUser = await addressRepository.find({
+      where: { user: { id: user_id } },
+    });
+
+    if (allAddressUser.length >= 10) {
+      throw new AppError(
+        "Você só pode registrar 10 endereços diferentes!",
+        400
+      );
+    }
+
+    const addressExists = await addressRepository.findOne({
+      where: { user: { id: user_id }, road, number, district, city, uf },
+    });
+
+    if (addressExists) {
+      throw new AppError("Endereço já está cadastrado no seu perfil!", 400);
+    }
+
     const address = addressRepository.create({
       road,
       number,

@@ -31,7 +31,7 @@ export default class AddColumnAddressIdUser1654046714266
   }
 
   public async down(queryRunner: QueryRunner): Promise<void> {
-    await queryRunner.dropForeignKey("address", "AddressUserId");
+    await queryRunner.dropForeignKey("address", "AddressUsersId");
     await queryRunner.dropColumn("address", "user_id");
   }
 }

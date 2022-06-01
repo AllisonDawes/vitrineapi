@@ -20,6 +20,9 @@ class Address {
   user: User;
 
   @Column()
+  user_id: string;
+
+  @Column()
   road: string;
 
   @Column()
@@ -36,6 +39,9 @@ class Address {
 
   @Column()
   uf: string;
+
+  @Column("boolean")
+  active: boolean;
 
   @CreateDateColumn()
   created_at: Date;
