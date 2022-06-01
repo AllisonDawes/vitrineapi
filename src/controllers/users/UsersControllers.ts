@@ -46,7 +46,7 @@ class UsersControllers {
       password,
     });
 
-    return response.status(200).json(classToPlain(user));
+    return response.status(201).json(classToPlain(user));
   }
 
   public async update(request: Request, response: Response): Promise<Response> {
