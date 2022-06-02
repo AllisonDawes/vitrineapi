@@ -13,7 +13,7 @@ confirmação por parte do cliente, ou entregador ao concluir a entrega.
 <br>
 
 - Autenticação com criptografia;
-- Cadastro, busca, atualização de dados e remoção de usuários;
+- Cadastro, busca, atualização de dados e remoção de usuários (administrador);
 - Criação, atualização e desativação da senha de administrador;
 - Criação, atualização e desativação de senha de administrador secundário;
 - Cadastro, busca, atualização de dadoe e remoção de endereços;
@@ -22,8 +22,11 @@ confirmação por parte do cliente, ou entregador ao concluir a entrega.
 
 <b>Funcionalidades a serem implementadas:</b>
 
+- Buscar, atualizar e remover perfil de usuário (cliente);
 - Cadastro, busca e atualização de horário de expediente do estabelecimento;
+- Cadastro, busca, atualização e remoção de categoria dos produtos;
 - Cadastro, busca, atualização e remoção de produtos;
+- Cadastro, busca e remoção de produtos favoritos;
 - cadastro, busca, atualização e remoção de pedidos;
 - Atualização de status da entrega do pedido;
 
