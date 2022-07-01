@@ -3,7 +3,7 @@
 ### Descrição:
 
 Api usada para registrar e fornecer dados para um App de Cardápio e Delivery, onde o
-estabelecimento irá fazer o processo de pedidos em estabelecimento, ou delivery, onde haverá a
+estabelecimento irá fazer o processo de pedidos em estabelecimento, ou delivery, e haverá a
 confirmação por parte do cliente, ou entregador ao concluir a entrega.
 
   <br>
