@@ -2,13 +2,13 @@
 
 ### Descrição:
 
-Api usada para registrar e fornecer dados para um App de Cardápio de Delivery, onde o
-estabelecimento irá fazer o processo de pedidos até a finalização do delivery, onde haverá a
+Api usada para registrar e fornecer dados para um App de Cardápio e Delivery, onde o
+estabelecimento irá fazer o processo de pedidos em estabelecimento, ou delivery, onde haverá a
 confirmação por parte do cliente, ou entregador ao concluir a entrega.
 
   <br>
 
-<b>Funcionalidade (já desenvolvidas):</b>
+<b>Funcionalidade já desenvolvidas:</b>
 
 <br>
 
@@ -17,12 +17,12 @@ confirmação por parte do cliente, ou entregador ao concluir a entrega.
 - Criação, atualização e desativação da senha de administrador;
 - Criação, atualização e desativação de senha de administrador secundário;
 - Cadastro, busca, atualização de dadoe e remoção de endereços;
+- Buscar, atualizar e remover perfil de usuário (cliente);
 
 <br>
 
 <b>Funcionalidades a serem implementadas:</b>
 
-- Buscar, atualizar e remover perfil de usuário (cliente);
 - Cadastro, busca e atualização de horário de expediente do estabelecimento;
 - Cadastro, busca, atualização e remoção de categoria dos produtos;
 - Cadastro, busca, atualização e remoção de produtos;
