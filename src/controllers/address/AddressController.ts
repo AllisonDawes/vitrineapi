@@ -1,4 +1,5 @@
 import { Request, Response } from "express";
+import { classToPlain } from "class-transformer";
 
 import CreateAddressService from "../../services/address/CreateAddressService";
 import FindAllAddressService from "../../services/address/FindAllAddressService";
@@ -16,7 +17,7 @@ class AddressControllers {
       user_id,
     });
 
-    return response.status(200).json(address);
+    return response.status(200).json(classToPlain(address));
   }
 
   public async create(request: Request, response: Response): Promise<Response> {

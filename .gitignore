@@ -1,3 +1,7 @@
 node_modules
 notes.md
 yarn.lock
+.env
+
+imgs/*
+!imgs/.gitkeep
