@@ -2,10 +2,20 @@ import { Request, Response } from "express";
 import { classToPlain } from "class-transformer";
 
 import UpdateProfileService from "../../services/profile/UpdateProfileService";
+import DeleteProfileService from "../../services/profile/DeleteProfileService";
+import FindProfileService from "../../services/profile/FindProfileService";
 
 class ProfileControllers {
   public async show(request: Request, response: Response): Promise<Response> {
-    return response;
+    const profile_id = request.user.id;
+
+    const findProfileService = new FindProfileService();
+
+    const profile = await findProfileService.execute({
+      profile_id,
+    });
+
+    return response.status(200).json(classToPlain(profile));
   }
 
   public async update(request: Request, response: Response): Promise<Response> {
@@ -26,7 +36,15 @@ class ProfileControllers {
   }
 
   public async delete(request: Request, response: Response): Promise<Response> {
-    return response;
+    const profile_id = request.user.id;
+
+    const deleteProfileService = new DeleteProfileService();
+
+    await deleteProfileService.execute({
+      profile_id,
+    });
+
+    return response.status(200).json({});
   }
 }
 
