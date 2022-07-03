@@ -6,6 +6,7 @@ import sessionRouter from "./session.routes";
 import adminRouter from "./admin.routes";
 import passAdminSecundaryRouter from "./adminSecundary.routes";
 import addressRouter from "./address.routes";
+import openCloseHour from "./openCloseHour.routes";
 
 const routes = Router();
 
@@ -15,5 +16,6 @@ routes.use("/sessions", sessionRouter);
 routes.use("/admins", adminRouter);
 routes.use("/admin_secundary", passAdminSecundaryRouter);
 routes.use("/address", addressRouter);
+routes.use("/openclosehours", openCloseHour);
 
 export default routes;
