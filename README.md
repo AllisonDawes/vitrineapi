@@ -16,16 +16,18 @@ confirmação por parte do cliente, ou entregador ao concluir a entrega.
 - Cadastro, busca, atualização de dados e remoção de usuários (administrador);
 - Criação, atualização e desativação da senha de administrador;
 - Criação, atualização e desativação de senha de administrador secundário;
-- Cadastro, busca, atualização de dadoe e remoção de endereços;
+- Cadastro, busca, atualização de dados e remoção de endereços;
 - Buscar, atualizar e remover perfil de usuário (cliente);
+- Cadastro, busca e atualização de horário de expediente do estabelecimento;
 
 <br>
 
 <b>Funcionalidades a serem implementadas:</b>
 
-- Cadastro, busca e atualização de horário de expediente do estabelecimento;
 - Cadastro, busca, atualização e remoção de categoria dos produtos;
+- Update de imagem de categoria de produto;
 - Cadastro, busca, atualização e remoção de produtos;
+- Update de imagem de produto;
 - Cadastro, busca e remoção de produtos favoritos;
 - cadastro, busca, atualização e remoção de pedidos;
 - Atualização de status da entrega do pedido;
