@@ -9,6 +9,7 @@ const openCloseOpenHour = new OpenCloseHourController();
 
 openCloseHour.use(ensureAuthenticated);
 
+openCloseHour.get("/", openCloseOpenHour.show);
 openCloseHour.post("/", openCloseOpenHour.create);
 
 export default openCloseHour;
