@@ -19,13 +19,13 @@ confirmação por parte do cliente, ou entregador ao concluir a entrega.
 - Cadastro, busca, atualização de dados e remoção de endereços;
 - Buscar, atualizar e remover perfil de usuário (cliente);
 - Cadastro, busca e atualização de horário de expediente do estabelecimento;
+- Cadastro, busca, atualização e remoção de categoria dos produtos;
+- Update de imagem de categoria de produto;
 
 <br>
 
 <b>Funcionalidades a serem implementadas:</b>
 
-- Cadastro, busca, atualização e remoção de categoria dos produtos;
-- Update de imagem de categoria de produto;
 - Cadastro, busca, atualização e remoção de produtos;
 - Update de imagem de produto;
 - Cadastro, busca e remoção de produtos favoritos;
