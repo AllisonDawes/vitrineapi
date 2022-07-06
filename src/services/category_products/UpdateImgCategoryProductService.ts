@@ -57,7 +57,7 @@ class UpdateImgCategoryProductService {
 
     categoryProduct.category_products_img = categoryProductImgFileName!;
 
-    await userRespository.save(categoryProduct);
+    await categoryProductRepository.save(categoryProduct);
 
     return categoryProduct;
   }
