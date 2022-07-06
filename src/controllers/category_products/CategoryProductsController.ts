@@ -4,7 +4,7 @@ import CreateCategoryProductService from "../../services/category_products/Creat
 import FindAllCategoriesProducstService from "../../services/category_products/FindAllCategoriesProductsService";
 import UpdateCategoryProductService from "../../services/category_products/UpdateCategoryProductService";
 import ActiveCategoryProductService from "../../services/category_products/ActiveCategoryProductService";
-import DeleteCategoryProductService from "../../services/category_products/DeleteCategoryProduct";
+import DeleteCategoryProductService from "../../services/category_products/DeleteCategoryProductService";
 
 class CategoryProductsController {
   public async index(request: Request, response: Response): Promise<Response> {
