@@ -3,6 +3,7 @@ import { Request, Response } from "express";
 import CreateCategoryProductService from "../../services/category_products/CreateCategoryProductService";
 import FindAllCategoriesProducstService from "../../services/category_products/FindAllCategoriesProductsService";
 import UpdateCategoryProductService from "../../services/category_products/UpdateCategoryProductService";
+import ActiveCategoryProductService from "../../services/category_products/ActiveCategoryProductService";
 import DeleteCategoryProductService from "../../services/category_products/DeleteCategoryProduct";
 
 class CategoryProductsController {
@@ -41,6 +42,20 @@ class CategoryProductsController {
       admin_id,
       category_id,
       name,
+    });
+
+    return response.status(200).json(categoryProduct);
+  }
+
+  public async patch(request: Request, response: Response): Promise<Response> {
+    const admin_id = request.user.id;
+    const { category_id } = request.params;
+
+    const activeCategoryProductService = new ActiveCategoryProductService();
+
+    const categoryProduct = await activeCategoryProductService.execute({
+      admin_id,
+      category_id,
     });
 
     return response.status(200).json(categoryProduct);

@@ -12,6 +12,7 @@ categoryProductRouter.use(ensureAuthenticated);
 categoryProductRouter.get("/", categoryProductsController.index);
 categoryProductRouter.post("/", categoryProductsController.create);
 categoryProductRouter.put("/:category_id", categoryProductsController.update);
+categoryProductRouter.patch("/:category_id", categoryProductsController.patch);
 categoryProductRouter.delete(
   "/:category_id",
   categoryProductsController.delete
