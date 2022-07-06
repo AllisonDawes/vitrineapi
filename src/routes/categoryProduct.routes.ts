@@ -9,7 +9,12 @@ const categoryProductsController = new CategoryProductsController();
 
 categoryProductRouter.use(ensureAuthenticated);
 
-categoryProductRouter.get("/", categoryProductsController.show);
+categoryProductRouter.get("/", categoryProductsController.index);
 categoryProductRouter.post("/", categoryProductsController.create);
+categoryProductRouter.put("/:category_id", categoryProductsController.update);
+categoryProductRouter.delete(
+  "/:category_id",
+  categoryProductsController.delete
+);
 
 export default categoryProductRouter;
